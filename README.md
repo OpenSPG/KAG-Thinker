@@ -22,7 +22,7 @@ Reasoning on our model requires retrieval service and large language model servi
     conda install -c pytorch -c nvidia faiss-gpu=1.8.0
 
 # Training
-Download [training dataset](https://huggingface.co/datasets/OpenSPG/KAG-Thinker-training-dataset) here, we name english training dataset "musique_multi_search_logic_form_train_top3_en" , name chinese and engligh mixed dataset "musique_multi_search_logic_form_train_top3_en_ch". The format of the training dataset, the dataset_info config and the hyperparameters for our model training are as follows:
+Download [training dataset](https://huggingface.co/datasets/OpenSPG/KAG-Thinker-training-dataset) here, we name english training dataset "KAG_Thinker_en_train" , name chinese and engligh mixed dataset "KAG_Thinker_en_ch_train". The format of the training dataset, the dataset_info config and the hyperparameters for our model training are as follows:
 
 <details>
 <summary>Training Data Example</summary>
@@ -103,12 +103,29 @@ Download [training dataset](https://huggingface.co/datasets/OpenSPG/KAG-Thinker-
     }
 
 </details>
-     
+
+# Dataset Convert
+To train with LLaMA-Factory, the JSONL data format needs to be converted into a single large JSON file. The converted format should be:
+```json
+[
+  {	
+    "source": "nq",
+	"id": "xxx",
+	"messages": [...]
+  },
+  {	
+    "source": "nq",
+	"id": "xxx",
+	"messages": [...]
+  },...
+]
+```
+
 <details>
 <summary>Dataset_info</summary>
 
-    "musique_multi_search_logic_form_train_top3_en": {
-        "file_name": "musique_multi_search_logic_form_train_top3_en.jsonl",
+    "KAG_Thinker_en_train_convert": {
+        "file_name": "KAG_Thinker_en_train_convert.json",
         "formatting": "sharegpt",
         "columns": {
                 "messages": "messages"
