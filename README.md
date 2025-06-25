@@ -151,7 +151,7 @@ To train with LLaMA-Factory, the JSONL data format needs to be converted into a 
     finetuning_type: full
     deepspeed: examples/deepspeed/ds_z3_config.json
 
-    dataset: musique_multi_search_logic_form_train_top3_en
+    dataset: KAG_Thinker_en_train_convert
     template: qwen
     cutoff_len: 16384
     max_samples: 50000000
