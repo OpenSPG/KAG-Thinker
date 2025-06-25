@@ -109,14 +109,14 @@ To train with LLaMA-Factory, the JSONL data format needs to be converted into a 
 ```json
 [
   {	
-    "source": "nq",
-	"id": "xxx",
-	"messages": [...]
+    "source": "nq", 
+    "id": "xxx", 
+    "messages": [...]
   },
   {	
-    "source": "nq",
-	"id": "xxx",
-	"messages": [...]
+    "source": "nq", 
+    "id": "xxx", 
+    "messages": [...]
   },...
 ]
 ```
@@ -223,8 +223,8 @@ We not only provide english version [KAG-Thinker-en](https://huggingface.co/Open
 # Citiation
 If you want to know more details, see our technical report.
 
-    @misc{zhang2025kagthinkerteachinglargelanguage,
-      title={KAG-Thinker: Teaching Large Language Models to Think with Human-like Reasoning Process}, 
+    @misc{zhang2025kagthinkerinteractivethinkingdeep,
+      title={KAG-Thinker: Interactive Thinking and Deep Reasoning in LLMs via Knowledge-Augmented Generation}, 
       author={Dalong Zhang and Jun Xu and Jun Zhou and Lei Liang and Lin Yuan and Ling Zhong and Mengshu Sun and Peilong Zhao and QiWei Wang and Xiaorui Wang and Xinkai Du and YangYang Hou and Yu Ao and ZhaoYang Wang and Zhengke Gui and ZhiYing Yi and Zhongpu Bo},
       year={2025},
       eprint={2506.17728},
