@@ -1,0 +1,6 @@
+gpu_id: "4,5,6,7"
+retrieval_method: "e5-base-v2_model_path"
+index_path: "e5_flat_index_path"
+faiss_gpu: True
+corpus_path: "corpus_data_path"
+
