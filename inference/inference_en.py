@@ -193,7 +193,7 @@ class KAGThinker:
             }
             messages.append(subquestion_user)
             num_turns = 0
-            while num_turns < 4:
+            while num_turns < 10:
                 num_turns += 1
                 subquestion_response = self.generate(messages)
                 if "<answer>" in subquestion_response:
