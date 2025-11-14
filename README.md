@@ -232,3 +232,12 @@ If you want to know more details, see our technical report.
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2506.17728}, 
     }
+    @misc{xu2025thinkertrainingllmshierarchical,
+      title={Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction}, 
+      author={Jun Xu and Xinkai Du and Yu Ao and Peilong Zhao and Yang Li and Ling Zhong and Lin Yuan and Zhongpu Bo and Xiaorui Wang and Mengshu Sun and Zhengke Gui and Dalong Zhang and Zhaoyang Wang and Qiwei Wang and Yangyang Hou and Zhiying Yin and Haofen Wang and Huajun Chen and Lei Liang and Jun Zhou},
+      year={2025},
+      eprint={2511.07943},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2511.07943}
+    }
